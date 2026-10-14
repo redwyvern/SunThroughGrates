@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SunThroughGrates</AssemblyName>
+    <RootNamespace>SunThroughGrates</RootNamespace>
+    <Version>1.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Folder laid out like a Valheim install: BepInEx/core + valheim_Data/Managed -->
+    <VALHEIM_INSTALL Condition="'$(VALHEIM_INSTALL)' == ''">$(MSBuildThisFileDirectory)../../../valheim-libs</VALHEIM_INSTALL>
+    <ManagedDir>$(VALHEIM_INSTALL)/valheim_Data/Managed</ManagedDir>
+    <BepInExCore>$(VALHEIM_INSTALL)/BepInEx/core</BepInExCore>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Lets net48 build on Linux without Mono's reference assemblies -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(BepInExCore)/0Harmony.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(BepInExCore)/BepInEx.dll" Private="false" />
+    <Reference Include="assembly_valheim" HintPath="$(ManagedDir)/assembly_valheim.dll" Private="false" />
+    <Reference Include="assembly_utils" HintPath="$(ManagedDir)/assembly_utils.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ManagedDir)/UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ManagedDir)/UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(ManagedDir)/UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="netstandard" HintPath="$(ManagedDir)/netstandard.dll" Private="false" />
+  </ItemGroup>
+
+</Project>
