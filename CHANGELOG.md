@@ -15,5 +15,5 @@ All notable changes to this project are documented here. The format follows
 - `Ignored prefabs` config setting listing the pieces that let sunlight
   through. Changes apply live.
 
-[Unreleased]: https://github.com/nickweedon/SunThroughGrates/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/nickweedon/SunThroughGrates/releases/tag/v1.0.0
+[Unreleased]: https://github.com/redwyvern/SunThroughGrates/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/redwyvern/SunThroughGrates/releases/tag/v1.0.0

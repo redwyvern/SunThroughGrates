@@ -61,11 +61,11 @@ VALHEIM_INSTALL=/path/to/Valheim \
 ```
 
 Output: `SunThroughGrates/bin/Release/SunThroughGrates.dll`. To build the
-Thunderstore package, see [CONTRIBUTING.md](https://github.com/nickweedon/SunThroughGrates/blob/main/CONTRIBUTING.md#releasing).
+Thunderstore package, see [CONTRIBUTING.md](https://github.com/redwyvern/SunThroughGrates/blob/main/CONTRIBUTING.md#releasing).
 
 ## Links
 
-- Source and issues: <https://github.com/nickweedon/SunThroughGrates>
-- Contributing: [CONTRIBUTING.md](https://github.com/nickweedon/SunThroughGrates/blob/main/CONTRIBUTING.md)
-- Changelog: [CHANGELOG.md](https://github.com/nickweedon/SunThroughGrates/blob/main/CHANGELOG.md)
+- Source and issues: <https://github.com/redwyvern/SunThroughGrates>
+- Contributing: [CONTRIBUTING.md](https://github.com/redwyvern/SunThroughGrates/blob/main/CONTRIBUTING.md)
+- Changelog: [CHANGELOG.md](https://github.com/redwyvern/SunThroughGrates/blob/main/CHANGELOG.md)
 - License: MIT

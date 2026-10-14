@@ -10,7 +10,7 @@
 #
 # Needs: dotnet, tcli (dotnet tool install -g tcli), gh (authenticated),
 # VALHEIM_INSTALL (see README). --publish also needs TCLI_AUTH_TOKEN, a
-# Thunderstore service account token for the nickweedon team.
+# Thunderstore service account token for the redwyvern team.
 set -euo pipefail
 
 VERSION="${1:-}"
@@ -42,7 +42,7 @@ grep -q "^## \[$VERSION\]" CHANGELOG.md || die "CHANGELOG.md has no ## [$VERSION
 dotnet build SunThroughGrates/SunThroughGrates.csproj -c Release
 rm -rf build
 tcli build
-ZIP="build/nickweedon-SunThroughGrates-$VERSION.zip"
+ZIP="build/redwyvern-SunThroughGrates-$VERSION.zip"
 [[ -f "$ZIP" ]] || die "expected $ZIP from tcli build"
 DLL=SunThroughGrates/bin/Release/SunThroughGrates.dll
 

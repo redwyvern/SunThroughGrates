@@ -2,13 +2,13 @@
 schemaVersion = "0.0.1"
 
 [package]
-namespace = "nickweedon"
+namespace = "redwyvern"
 name = "SunThroughGrates"
 # Keep in sync with SunThroughGrates.csproj <Version> and Plugin.PluginVersion
 # (tools/release.sh checks this)
 versionNumber = "1.0.0"
 description = "Sunlight passes through iron cage floors and grates, so crops grow under an iron ceiling. Solid roofs still block the sun."
-websiteUrl = "https://github.com/nickweedon/SunThroughGrates"
+websiteUrl = "https://github.com/redwyvern/SunThroughGrates"
 containsNsfwContent = false
 
 [package.dependencies]
