@@ -1,0 +1,35 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "nickweedon"
+name = "SunThroughGrates"
+# Keep in sync with SunThroughGrates.csproj <Version> and Plugin.PluginVersion
+# (tools/release.sh checks this)
+versionNumber = "1.0.0"
+description = "Sunlight passes through iron cage floors and grates, so crops grow under an iron ceiling. Solid roofs still block the sun."
+websiteUrl = "https://github.com/nickweedon/SunThroughGrates"
+containsNsfwContent = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2351"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./SunThroughGrates/bin/Release/SunThroughGrates.dll"
+target = "SunThroughGrates.dll"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "CHANGELOG.md"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["valheim"]
+
+[publish.categories]
+valheim = ["mods", "client-side", "server-side", "tweaks", "deep-north-update", "ai-generated"]

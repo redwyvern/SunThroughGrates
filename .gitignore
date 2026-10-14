@@ -2,3 +2,6 @@ bin/
 obj/
 *.user
 .vs/
+tools/preview64.png
+tools/big.png
+build/
